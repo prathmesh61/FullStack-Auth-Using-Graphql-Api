@@ -76,10 +76,7 @@ exports.resolvers = {
         });
 
         await newUser.save();
-        return {
-          id: newUser._id,
-          ...newUser._doc,
-        };
+        return newUser;
       } catch (error) {
         new ApolloError(error, 500);
       }
@@ -101,7 +98,7 @@ exports.resolvers = {
 
       try {
         const user = await userModle.findOne({ email });
-        return user;
+        return newUser;
       } catch (error) {
         new ApolloError(error, 500);
       }
