@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Product Sans", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  background-color: #1d1c1c;
+  color: azure;
+}
+.Container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+// createaccount page css
+.CreateAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 20px;
+
+  h1 {
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+    border-bottom: 1px solid rgb(26, 175, 125);
+  }
+
+  .input-box {
+    display: flex;
+    flex-direction: column;
+
+    .label {
+      font-size: 1.4rem;
+    }
+    input {
+      margin-top: 10px;
+      padding: 0.8rem 2rem;
+      min-width: 400px;
+      border: none;
+      outline: none;
+      border-radius: 9px;
+    }
+  }
+  .btn {
+    margin-top: 10px;
+    padding: 0.8rem 2rem;
+    min-width: 400px;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    background-color: rgb(26, 175, 125);
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  span {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    a {
+      color: whitesmoke;
+    }
+  }
+}
