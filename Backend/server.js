@@ -98,7 +98,7 @@ exports.resolvers = {
 
       try {
         const user = await userModle.findOne({ email });
-        return newUser;
+        return user;
       } catch (error) {
         new ApolloError(error, 500);
       }

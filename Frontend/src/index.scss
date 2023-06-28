@@ -69,4 +69,38 @@ body {
       color: whitesmoke;
     }
   }
+  .error {
+    background-color: rgb(255, 90, 90);
+    padding: 1rem 2rem;
+  }
+}
+
+// Home
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(26, 175, 125);
+  }
+  p {
+    font-size: 2rem;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  input {
+    margin-top: 20px;
+    background-color: rgb(26, 175, 125);
+    padding: 10px;
+  }
 }
